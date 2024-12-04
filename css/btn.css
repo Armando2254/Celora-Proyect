@@ -1,0 +1,19 @@
+
+/* Estilo personalizado para el botón */
+.btn-custom {
+    background-color: #50C878;
+    color: white; /* Texto blanco para contraste */
+}
+
+.btn-custom:hover {
+    background-color: #45b568; /* Color ligeramente más oscuro al pasar el mouse */
+}
+
+/* Asegúrate de que el modal se apile sobre otros elementos */
+.modal-backdrop {
+z-index: 1040 !important; /* Esto asegura que el fondo del modal tenga un alto z-index */
+}
+
+.modal {
+z-index: 1050 !important; /* Esto asegura que el modal tenga el mayor z-index */
+}

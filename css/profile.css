@@ -1,0 +1,168 @@
+/* Variables CSS para personalización */
+:root {
+    --footer-padding: 1rem; /* Espaciado interno */
+    --primary-color: #4CAF50; /* Color principal */
+    --secondary-color: #f1f1f1; /* Fondo de página */
+    --text-color: #333; /* Color de texto */
+    --header-background: #2C3E50; /* Fondo del header */
+    --header-text-color: #fff; /* Texto del header */
+    --footer-background:#50c878; /* Fondo del footer */
+    --bs-blue: #0d6efd;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --v5: #f0f0f0;
+    --v6: #519668;
+    --v7: #f5f5dc;
+    --v8: #45b96d;
+    --v9: #50c878;
+}
+
+/* Estilos globales */
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Header */
+header {
+    background-color: var(--v9);
+    color: var(--header-text-color);
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+
+/* Contenedor principal */
+main {
+    flex: 1;
+}
+
+/* Perfil */
+.profile-container {
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.profile-container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.profile-container p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.profile-container p strong {
+    color: var(--primary-color);
+}
+
+/* Botones */
+.btn-container {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 600px;
+    margin: 2rem auto 1rem;
+}
+
+.btn-custom {
+    background-color: var(--primary-color);
+    color: var(--bs-white);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.btn-custom:hover {
+    background-color: #45a049;
+}
+
+/* Foto de perfil */
+.profile-picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-picture:hover img {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el footer */
+#footer {
+    background-color: var(--footer-background, #34495E); /* Color de fondo, puedes cambiarlo */
+    color: var(--footer-text-color, #ffffff); /* Color del texto */
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 2px solid var(--primary-color);
+}
+
+/* Contenedor dentro del footer */
+#footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilo para los enlaces del footer */
+#footer .footer-link {
+    background-color: #198754; /* Fondo verde */
+    color: #ffffff; /* Texto blanco */
+    padding: 0.5rem 1rem; /* Espaciado alrededor del texto */
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover en los enlaces */
+#footer .footer-link:hover {
+    color: var(--footer-link-hover-color, --bs-black); /* Color al pasar el cursor */
+  
+}
+
+/* Opcional: Ajustar tamaño de fuente para el texto del footer */
+#footer p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}

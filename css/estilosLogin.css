@@ -1,0 +1,81 @@
+        /* Estilos globales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: #50C878; /* Verde esmeralda */
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar img {
+            height: 100px; /* Ajusta el tamaño de la imagen */
+            margin-right: 10px;
+        }
+
+        .navbar h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Contenedor del login */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .login-box {
+            background-color: #f5f5dc; /* Color hueso */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .login-box label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        #log {
+            background-color: #50C878; /* Verde esmeralda */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        #log:hover {
+            background-color: #45b96d; 
+        }
